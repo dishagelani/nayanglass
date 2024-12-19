@@ -1,0 +1,355 @@
+[
+    {
+      "id": 1,
+      "name": "PATEL FURNITURE",
+      "address": "no. : 1 to 13, thakordwar soc, surat",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AKIPB6527F1ZH"
+    },
+    {
+      "id": 2,
+      "name": "CREATIVE FURNITURE",
+      "address": "NH no: 08, kamrej kadodara highway, surat",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AMYPP6085G1ZC"
+    },
+    {
+      "id": 3,
+      "name": "SREE KUBEAR STEEL INDUSTRIES",
+      "address": "29/A PNO1/59.BHAGWATI INDUSTRIAL ES BHESTAN",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24FJGPS1815B1ZI"
+    },
+    {
+      "id": 4,
+      "name": "KUBER STEEL INDUSRTRY",
+      "address": "road no. 7 udhana, surats",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AHSPN2958D1Z3"
+    },
+    {
+      "id": 5,
+      "name": "OM STEEL FURNITURE",
+      "address": "21-sai industry enclave, kamrej",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AKTPM0299C1ZO"
+    },
+    {
+      "id": 6,
+      "name": "MIDAS TOUCH",
+      "address": "G-1 to 13, bhagavati nagar bhestan",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AAXFM5163D1Z3"
+    },
+    {
+      "id": 7,
+      "name": "MURLIDHAR STEEL FURNITURE",
+      "address": "near sahayog hotel, tatathiya kadodara",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24ABRPP2684B1ZJ"
+    },
+    {
+      "id": 8,
+      "name": "HARE KRUSHNA STEEL AND FURNITURE",
+      "address": "79 amrut udhyognagar kamrej",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24BDLPG1406M1ZO"
+    },
+    {
+      "id": 9,
+      "name": "BRAHMANI FURNIECH PVL",
+      "address": "GA FIOR SN186/187BLOK.N.145P3.SHEENATHJI IN KIM",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AAKCB0311N1ZW"
+    },
+    {
+      "id": 10,
+      "name": "STEEFURN",
+      "address": "GIDC ankleshwar",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24ACCFS8951Q"
+    },
+    {
+      "id": 11,
+      "name": "SHREE UMIYAJI WOOD FURNITURE",
+      "address": "27 SAI industry, navagam kamrej.",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24ARTPA5836G1ZP"
+    },
+    {
+      "id": 12,
+      "name": "MURLIDHAR INDUSTRLES",
+      "address": "PANIVARI VYARA",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AQRPP8211B1ZX"
+    },
+    {
+      "id": 13,
+      "name": "KRISHNA STEEL INDUSTRIES",
+      "address": "139, shreji suncity texttile, velenja surat",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AAGFK7885D1Z5"
+    },
+    {
+      "id": 14,
+      "name": "SHALIBHADRA ENTERPRISE",
+      "address": "x- 1 2 3 laxminarayan industry park, udhana, surat",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AAXPD4737A1ZV"
+    },
+    {
+      "id": 15,
+      "name": "RAM FURNITURE",
+      "address": "near toll plaza dondaicha dist dhula",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "27AVMPP7563L1ZO"
+    },
+    {
+      "id": 16,
+      "name": "JENI STEEL",
+      "address": "89-92, sahyog steel, kareli, surat",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24ALPP3056R1ZB"
+    },
+    {
+      "id": 17,
+      "name": "MURLIDHAR STEEL FURNITURE",
+      "address": "near sahayog hotel, tatathaiya kadodara",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24ABRPP2684B1ZJ"
+    },
+    {
+      "id": 18,
+      "name": "AJAY GLASS & STEEL FURNITURE",
+      "address": "vasta devadi road, surat",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24ABYPR4189G1ZW"
+    },
+    {
+      "id": 19,
+      "name": "KHUSHI STEEL FURNITURE",
+      "address": "no: 73, soham industry kamrej",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AJGPG6277N1ZS"
+    },
+    {
+      "id": 20,
+      "name": "KHUSHI WOOD FURNITURE",
+      "address": "74, soham industry, nr. Navagam udhyognagar, kamrej",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24ANAPM7712Q1ZO"
+    },
+    {
+      "id": 21,
+      "name": "SUPREME STEEL FURNITURE",
+      "address": "65,66 udhyog nagar, kamrej",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24ABKPD0647F1Z3"
+    },
+    {
+      "id": 22,
+      "name": "JAY AMBE FURNITURE",
+      "address": "d: 30 udhyog naga, navsari",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24ARGPP2698Q1ZW"
+    },
+    {
+      "id": 23,
+      "name": "LAXMI ENTERPRISE",
+      "address": "no: 151 ankur soc. Varacha",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AGYPM3727C1Z9"
+    },
+    {
+      "id": 24,
+      "name": "SHREE MARUTI STEEL INDUSTRY",
+      "address": "gandhi estate, kamrek",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AHRPC9379A128"
+    },
+    {
+      "id": 25,
+      "name": "KUBER STEEL INDUSTRY",
+      "address": "road no: 7 udhana surat",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AHSPN2958D1Z3"
+    },
+    {
+      "id": 26,
+      "name": "HARSHAD STEEL FURNITURE",
+      "address": "dindori road khatvad fata, nasik",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "27AGYPA9063H1ZW"
+    },
+    {
+      "id": 27,
+      "name": "CREATIVE FURNITURE",
+      "address": "NH no: 8 kamrej kadodara highway surat",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AMYPP6085G1ZC"
+    },
+    {
+      "id": 28,
+      "name": "SHREE KUBER STEEL INDUSTRIES",
+      "address": "J 58/59 bhagavati industry udhana sachin main road",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24FJGPS1815B1ZI"
+    },
+    {
+      "id": 29,
+      "name": "HENIL TRED",
+      "address": "B/412, 4 TO 8 dalmil compound",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24APZPP4331Q1ZY"
+    },
+    {
+      "id": 30,
+      "name": "MURLIDHAR FURNITURE/ HOME DÉCOR",
+      "address": "b 45 kailash ganga residency dastan palsana surat",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24ALPPP7428P1Z7"
+    },
+    {
+      "id": 31,
+      "name": "SIDDHI VINAYAK STEEL INDUSTRY",
+      "address": "collage road chikhali",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24ATEPM2244F1Z2"
+    },
+    {
+      "id": 32,
+      "name": "AESHREE BALVAI STEEL WORKERS",
+      "address": "near akhand anand school, vedroad",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AAF2V176691ZX"
+    },
+    {
+      "id": 33,
+      "name": "JAY GELMA STEEL INDUSTRIES",
+      "address": "108/109 amrut udhyog nagar kamrej",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AADFJ2772P1Z0"
+    },
+    {
+      "id": 34,
+      "name": "CHAIR CONCEPT",
+      "address": "A-9 laxminarayan industry, udhana",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AIBPJ6302K1ZK"
+    },
+    {
+      "id": 35,
+      "name": "DEEPAK STEEL MFG",
+      "address": "navasari",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24DXXP3451H1ZP"
+    },
+    {
+      "id": 36,
+      "name": "HARE KRUSHNA INDUSTRY",
+      "address": "BPA NO-1, KIM",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AKRPP3567K1Z1"
+    },
+    {
+      "id": 37,
+      "name": "SANSKAAR STEEL AND FURNITURE",
+      "address": "near geeta chawk, surat",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AFZPG8207Q1Z5"
+    },
+    {
+      "id": 38,
+      "name": "MOKSH STEEL FURNITURE",
+      "address": "kamrej surat",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AMRPG0986K1ZD"
+    },
+    {
+      "id": 39,
+      "name": "KUBER FURNITURE",
+      "address": "NR. SOLA",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24ASQPR8887M2ZS"
+    },
+    {
+      "id": 40,
+      "name": "D L STEEL FURNITURE",
+      "address": "surat",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24BGMPR1005P1ZV"
+    },
+    {
+      "id": 41,
+      "name": "MAHALAXMI FURNITURE",
+      "address": "near mumbai textile mill, valia road",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AGJPS9095H1ZO"
+    },
+    {
+      "id": 42,
+      "name": "THAKUR FURNITURE",
+      "address": "ghor, tal- bardoli dist-surat",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AAFPK0700P1Z8"
+    },
+    {
+      "id": 43,
+      "name": "BAMANI INDUSTRIES",
+      "address": "satubapa gam, dahegam",
+      "state" : "Gujarat",
+      "stateCode":24,
+      "gstNo": "24AMNPS8463M1Z7"
+    },
+    {
+      "id": 44,
+      "name": "GELANI INDUSTRIES",
+      "address": "satubapa gam, dahegam",
+      "state" : "Maharashtra",
+      "stateCode":25,
+      "gstNo": "24AMNPS8463M1Z7"
+    }
+  ]
+  

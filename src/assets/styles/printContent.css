@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+
+.print-section {
+    height: max-content;
+    width: auto;
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: 500;
+}
+.print-section .ant-form-item-label > label, .print-section .ant-input, .print-section .ant-picker-input >input, .print-section .ant-table,.print-section .ant-row, .print-section .ant-col, .print-section .ant-btn,.print-section .ant-select-selector{
+    font-size: 12px !important;
+  } */
+.page-header {
+    padding: 0 20px;
+}
+
+.first-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-row {
+    margin: 20px
+}
+
+.title-row h1 {
+    margin: 0;
+}
+
+.subtitleRow {
+    font-family: "Quintessential", serif;
+}
+
+.customer-details .title-row {
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.customer-data {
+    border: 1px solid black;
+    margin: 0 20px;
+
+}
+
+.customer-data .ant-row {
+    border-bottom: 1px solid black;
+}
+
+.customer-data .ant-row:last-child {
+    border-bottom: none;
+}
+
+.customer-data .ant-col {
+    padding: 4px;
+    border-right: 1px solid black;
+}
+
+.customer-data .ant-col:last-child {
+    border-right: none;
+}
+
+.invoice-table {
+    margin: 20px;
+}
+.invoice-table .ant-table{
+    border-radius: 0px;
+    border: 1px solid;
+}
+
+.invoice-table .ant-table-wrapper .ant-table-cell {
+    padding: 4px !important;
+    text-align: center;
+}
+
+.invoice-table .ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-content >table >tbody>tr>td, 
+.invoice-table .ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-content >table >thead>tr>th{
+    border-inline-end : 1px solid
+}
+.invoice-table .ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-content >table >tbody>tr>td:last-child,
+.invoice-table .ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-content >table >thead>tr>th:last-child
+{
+    border-inline-end : 0px
+}
+
+.invoice-table .ant-table-wrapper .ant-table-thead >tr>th, .invoice-table .ant-table-wrapper .ant-table-tbody >tr >td{
+    border-bottom: 1px solid;
+} 
+
+.invoice-table .ant-table-wrapper .ant-table-tbody >tr:last-child>td{
+    border-bottom: none;
+}
+.invoice-table .ant-table-container table>thead>tr:first-child >*:first-child{
+    border-start-start-radius : 0px !important;
+} 
+
+.invoice-table .ant-table-container table>thead>tr:first-child >*:last-child{
+    border-start-end-radius : 0px !important
+}
+
+.invoice-summary {
+    border: 1px solid;
+    margin: 20px;
+}
+
+.invoice-row {
+    border-bottom: 1px solid;
+}
+
+.invoice-row:last-child {
+    border-bottom: none;
+}
+
+.invoice-row:last-child .ant-col {
+    font-weight: 900;
+    font-size: 16px !important;
+}
+
+.invoice-row .ant-col {
+    padding: 4px !important;
+}
+
+.additional-info {
+    margin: 20px;
+    border: 1px solid;
+}
+
+.bank-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 4px;
+    border-bottom: 1px solid
+}
+
+.terms-conditions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 4px;
+}
+
+
+.seal {
+    border-style: solid;
+    border-width: 0 1px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.declaration {
+    text-align: left;
+    padding: 4px;
+    border-bottom: 1px solid;
+}
+
+.stamp {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 4px;
+    font-weight: 900;
+}
+
+@media print {
+   
+    .customer-details .title-row {
+        background-color: black !important; 
+        color: white !important;
+        -webkit-print-color-adjust: exact; 
+        print-color-adjust: exact;
+    }
+
+    .invoice-table .ant-table-wrapper .ant-table-tbody >tr:last-child>td{
+        border-bottom: none !important
+    }
+    .invoice-table .ant-table-container table>thead>tr:first-child >*:first-child{
+        border-start-start-radius : 0px !important;
+    } 
+    
+    .invoice-table .ant-table-container table>thead>tr:first-child >*:last-child{
+        border-start-end-radius : 0px !important
+    }
+    .invoice-table .ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-content >table >tbody>tr>td:last-child,
+.invoice-table .ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-content >table >thead>tr>th:last-child
+{
+    border-inline-end : 0px !important
+}
+}

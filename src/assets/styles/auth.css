@@ -1,0 +1,8 @@
+.ant-card{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    min-width: 300px;    
+}
+.ant-alert {
+ padding: 8px 12px;
+     margin: 20px 0 !important;  
+}
