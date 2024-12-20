@@ -7,6 +7,7 @@
     border: 1px solid black;
     padding: 10px;
     font-weight: 500;
+    text-align: center;
 }
 
 .print-section .ant-form-item-label>label,

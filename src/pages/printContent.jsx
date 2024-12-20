@@ -1,9 +1,9 @@
+import React, {forwardRef} from 'react'
 import { Row, Col, Table } from 'antd';
-import React from 'react'
 import "../assets/styles/printContent.css"
 import moment from 'moment';
 
-const PrintContent = ({customer, invoiceDetails, invoiceSummary}) => {
+const PrintContent =  forwardRef(({ customer, invoiceDetails, invoiceSummary }, ref) => {
     const columns = [
         {
             title: 'Sr No.',
@@ -49,7 +49,7 @@ const PrintContent = ({customer, invoiceDetails, invoiceSummary}) => {
     ];
 
     return (
-        <div className="print-section">
+        <div className="print-section" ref={ref}>
             <div className='page-header'>
                 <div className='first-row'>
                     <div>Tax invoice</div>
@@ -211,7 +211,7 @@ const PrintContent = ({customer, invoiceDetails, invoiceSummary}) => {
             </div>
         </div >
 
-    );
-};
+);
+});
 
 export default PrintContent

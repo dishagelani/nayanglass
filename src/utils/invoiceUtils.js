@@ -1,7 +1,6 @@
 export const roundToTwoDecimal = (value) => Math.round(value * 100) / 100;
 
 export const calculateInvoiceSummary = (details, customerState, discount = 0) => {
-    console.log("invoiceSummary?.discount : ", discount);
 
   const subtotal = details.reduce((sum, item) => sum + (item.amount || 0), 0);
   const isGujarat = customerState === 'Gujarat';
