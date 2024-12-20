@@ -1,4 +1,6 @@
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { Spin } from 'antd';
 import InvoiceForm from './pages/invoiceForm';
 import PrintContent from './pages/printContent';
 import Login from './pages/auth';
@@ -19,8 +21,21 @@ const AuthRoute = () => {
 };
 
 export default function App() {
+  const [isLoading,setIsLoading] = useState(true)
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 500); 
+    
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <Router>
+      {isLoading ?
+        <Spin />
+      :
       <Routes>
         {/* Protected routes */}
         <Route path="/" element={<Protected />} />
@@ -29,6 +44,7 @@ export default function App() {
         {/* Authentication route */}
         <Route path="/auth" element={<AuthRoute />} />
       </Routes>
+      }
     </Router>
   );
 }

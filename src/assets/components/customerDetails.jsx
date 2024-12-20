@@ -1,27 +1,43 @@
-import React, {useMemo} from 'react';
-import { Form, Select, Input, Row, Col, DatePicker } from 'antd';
+import React, { useMemo, useState } from 'react';
+import { Form, Select, Input, Row, Col, DatePicker, InputNumber } from 'antd';
 import moment from 'moment';
 
 const CustomerDetails = ({ customer, setCustomer, customerData, setBillingDetails }) => {
+
+    const [customData, setCustomData] = useState(false)
     const customerOptions = useMemo(() =>
         customerData.map(({ name }) => ({ value: name, label: name })), [customerData]);
 
     return (
-        <Row gutter={12}>
-            <Col span={6}>
-                <Form.Item label="Name">
-                    <Select
-                        onChange={(value) => setCustomer(customerData.find(cust => cust.name == value))}
-                        defaultValue={customer?.name}
-                        options={customerOptions}
-                    />
+        <Row gutter={[12,12]}>
+            <Col xs={{span : 24, order : 1}} sm={12} md={8} lg={{span : 6, order : 0}} className='textfield-col'>
+                <Form.Item label="Name" style={{ marginBottom: 0 }}>
+                    {customData ?
+                    <>
+                        <Input placeholder="Enter name" onChange={(e) => setCustomer(prevDetails => ({ ...prevDetails, name: e.target.value }))} />
+                       
+                    </>
+                        :
+                        <>
+                            <Select
+                                onChange={(value) => setCustomer(customerData.find(cust => cust.name == value))}
+                                defaultValue={customer?.name}
+                                options={customerOptions}
+                            />
+                           
+                        </>
+                    }
                 </Form.Item>
-                <Row gutter={8}>
+                 <div style={{ fontWeight: 'bold', fontSize: '12px', textAlign: 'right', cursor: 'pointer' }} onClick={() => { setCustomData(!customData); setCustomer({}) }
+                            }>{customData ? 'View customer list' : 'Set Manually'}</div>
+
+                <Row gutter={[8,8]}>
                     <Col span={12}>
                         <Form.Item label="GST No.">
                             <Input
                                 placeholder="Enter GST number"
-                                value={customer?.gstNo}
+                                value={customer?.gstNo || ''}
+                                onChange={(e) => setCustomer(prevDetails => ({ ...prevDetails, gstNo: e.target.value }))}
                             />
                         </Form.Item>
                     </Col>
@@ -32,11 +48,12 @@ const CustomerDetails = ({ customer, setCustomer, customerData, setBillingDetail
                     </Col>
                 </Row>
             </Col>
-            <Col span={6} className="textarea-col">
+            <Col xs={{span : 24, order : 2}} sm={12} md={8} lg={{span : 6, order : 1}} className="textarea-col">
                 <Form.Item label="Address">
                     <Input.TextArea
                         placeholder="Enter address"
-                        value={customer?.address}
+                        value={customer?.address || ''}
+                        onChange={(e) => setCustomer(prevDetails => ({ ...prevDetails, address: e.target.value }))}
                     />
                 </Form.Item>
                 <Row gutter={16}>
@@ -44,26 +61,28 @@ const CustomerDetails = ({ customer, setCustomer, customerData, setBillingDetail
                         <Form.Item label="State">
                             <Input
                                 placeholder="Enter state"
-                                value={customer?.state}
+                                value={customer?.state || ''}
+                                onChange={(e) => setCustomer(prevDetails => ({ ...prevDetails, state: e.target.value }))}
                             />
                         </Form.Item>
                     </Col>
                     <Col span={12}>
                         <Form.Item label="State Code">
-                            <Input
+                            <InputNumber
                                 placeholder="Enter state code"
-                                value={customer?.stateCode}
-                                type='Number'
+                                value={customer?.stateCode || ''}
+                                onChange={(value) => setCustomer(prevDetails => ({ ...prevDetails, stateCode: value }))}
                             />
                         </Form.Item>
                     </Col>
                 </Row>
             </Col>
-            <Col span={8} className="textarea-col">
-                <Row gutter={8}>
+            <Col xs={{span : 24, order : 3}} sm={12} md={8} lg={{span : 8, order : 2}} className="textarea-col">
+                <Row gutter={[8,8]}>
                     <Col span={12}>
                         <Form.Item label="Place of Supply">
-                            <Input.TextArea placeholder="Enter place of supply" onChange={(e) => setBillingDetails(prevDetails => ({ ...prevDetails, placeOfSupply: e.target.value }))} />
+                        <Input.TextArea placeholder="Enter place of supply" defaultValue={customer?.address || ''} onChange={(e) => setBillingDetails(prevDetails => ({ ...prevDetails, placeOfSupply: e.target.value }))} />
+
                         </Form.Item>
                     </Col>
                     <Col span={12}>
@@ -73,11 +92,12 @@ const CustomerDetails = ({ customer, setCustomer, customerData, setBillingDetail
                         </Form.Item>
                     </Col>
                 </Row>
-                <Row gutter={8}>
+                <Row gutter={[8,8]}>
                     <Col span={12}>
                         <Form.Item label="State">
                             <Input
                                 placeholder="Enter state"
+                                defaultValue={customer?.state || ''}
                                 onChange={(e) => setBillingDetails(prevDetails => ({ ...prevDetails, stateOfSupply: e.target.value }))}
                             />
                         </Form.Item>
@@ -85,27 +105,35 @@ const CustomerDetails = ({ customer, setCustomer, customerData, setBillingDetail
 
                     <Col span={12}>
                         <Form.Item label="State Code">
-                            <Input
+                        <InputNumber
                                 placeholder="Enter state code"
-                                type='Number'
-                                onChange={(e) => setBillingDetails(prevDetails => ({ ...prevDetails, stateCodeOfSupply: e.target.value }))}
+                                defaultValue={customer?.stateCode || ''}
+                                onChange={(value) => setBillingDetails(prevDetails => ({ ...prevDetails, stateCodeOfSupply: value }))}
                             />
                         </Form.Item>
                     </Col>
                 </Row>
             </Col>
-            <Col span={4} className='textfield-col'>
+            <Col xs={{span : 24, order : 0}} sm={12} md={8} lg={{span : 4, order : 3}} className='textfield-col'>
+            <Row gutter={[8,0]}>
+
+            <Col xs={12} lg={24}>
+            
                 <Form.Item label="Invoice No.">
-                    <Input placeholder="Enter invoice number" type='Number' onChange={(e) => {
-                        console.log(e.target.value); setBillingDetails(prevDetails => ({
+                    <InputNumber placeholder="Enter invoice number" onChange={(value) => {
+                        setBillingDetails(prevDetails => ({
                             ...prevDetails,
-                            invoiceNo: e.target.value,
+                            invoiceNo:value,
                         }))
                     }} />
                 </Form.Item>
+                    </Col>
+                    <Col xs={12} lg={24}>
                 <Form.Item label="Invoice Date">
                     <DatePicker defaultValue={moment()} onChange={(value) => setBillingDetails(prevDetails => ({ ...prevDetails, invoiceDate: value }))} />
                 </Form.Item>
+                    </Col>
+                </Row>
 
             </Col>
         </Row>

@@ -8,16 +8,26 @@
     padding: 10px;
     font-weight: 500;
 }
-.print-section .ant-form-item-label > label, .print-section .ant-input, .print-section .ant-picker-input >input, .print-section .ant-table,.print-section .ant-row, .print-section .ant-col, .print-section .ant-btn,.print-section .ant-select-selector{
+
+.print-section .ant-form-item-label>label,
+.print-section .ant-input,
+.print-section .ant-picker-input>input,
+.print-section .ant-table,
+.print-section .ant-row,
+.print-section .ant-col,
+.print-section .ant-btn,
+.print-section .ant-select-selector {
     font-size: 12px !important;
-  } */
-.page-header {
+}
+
+*/ .page-header {
     padding: 0 20px;
 }
 
 .first-row {
     display: flex;
     justify-content: space-between;
+    padding: 0 20px;
 }
 
 .title-row {
@@ -65,7 +75,8 @@
 .invoice-table {
     margin: 20px;
 }
-.invoice-table .ant-table{
+
+.invoice-table .ant-table {
     border-radius: 0px;
     border: 1px solid;
 }
@@ -75,29 +86,31 @@
     text-align: center;
 }
 
-.invoice-table .ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-content >table >tbody>tr>td, 
-.invoice-table .ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-content >table >thead>tr>th{
-    border-inline-end : 1px solid
-}
-.invoice-table .ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-content >table >tbody>tr>td:last-child,
-.invoice-table .ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-content >table >thead>tr>th:last-child
-{
-    border-inline-end : 0px
+.invoice-table .ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tbody>tr>td,
+.invoice-table .ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>thead>tr>th {
+    border-inline-end: 1px solid !important
 }
 
-.invoice-table .ant-table-wrapper .ant-table-thead >tr>th, .invoice-table .ant-table-wrapper .ant-table-tbody >tr >td{
-    border-bottom: 1px solid;
-} 
-
-.invoice-table .ant-table-wrapper .ant-table-tbody >tr:last-child>td{
-    border-bottom: none;
+.invoice-table .ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tbody>tr>td:last-child,
+.invoice-table .ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>thead>tr>th:last-child {
+    border-inline-end: 0px !important
 }
-.invoice-table .ant-table-container table>thead>tr:first-child >*:first-child{
-    border-start-start-radius : 0px !important;
-} 
 
-.invoice-table .ant-table-container table>thead>tr:first-child >*:last-child{
-    border-start-end-radius : 0px !important
+.invoice-table .ant-table-wrapper .ant-table-thead>tr>th,
+.invoice-table .ant-table-wrapper .ant-table-tbody>tr>td {
+    border-bottom: 1px solid !important
+}
+
+.invoice-table .ant-table-wrapper .ant-table-tbody>tr:last-child>td {
+    border-bottom: none !important
+}
+
+.invoice-table .ant-table-container table>thead>tr:first-child>*:first-child {
+    border-start-start-radius: 0px !important;
+}
+
+.invoice-table .ant-table-container table>thead>tr:first-child>*:last-child {
+    border-start-end-radius: 0px !important
 }
 
 .invoice-summary {
@@ -167,27 +180,27 @@
 }
 
 @media print {
-   
     .customer-details .title-row {
-        background-color: black !important; 
+        background-color: black !important;
         color: white !important;
-        -webkit-print-color-adjust: exact; 
+        -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
 
-    .invoice-table .ant-table-wrapper .ant-table-tbody >tr:last-child>td{
+    .invoice-table .ant-table-wrapper .ant-table-tbody>tr:last-child>td {
         border-bottom: none !important
     }
-    .invoice-table .ant-table-container table>thead>tr:first-child >*:first-child{
-        border-start-start-radius : 0px !important;
-    } 
-    
-    .invoice-table .ant-table-container table>thead>tr:first-child >*:last-child{
-        border-start-end-radius : 0px !important
+
+    .invoice-table .ant-table-container table>thead>tr:first-child>*:first-child {
+        border-start-start-radius: 0px !important;
     }
-    .invoice-table .ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-content >table >tbody>tr>td:last-child,
-.invoice-table .ant-table-wrapper .ant-table.ant-table-bordered >.ant-table-container >.ant-table-content >table >thead>tr>th:last-child
-{
-    border-inline-end : 0px !important
-}
+
+    .invoice-table .ant-table-container table>thead>tr:first-child>*:last-child {
+        border-start-end-radius: 0px !important
+    }
+
+    .invoice-table .ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tbody>tr>td:last-child,
+    .invoice-table .ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>thead>tr>th:last-child {
+        border-inline-end: 0px !important
+    }
 }
