@@ -43,9 +43,7 @@ const PrintContent =  forwardRef(({ customer, invoiceDetails, invoiceSummary }, 
             dataIndex: 'amount',
             key: 'amount',
             width: '30%',
-
         },
-
     ];
 
     return (
@@ -202,9 +200,7 @@ const PrintContent =  forwardRef(({ customer, invoiceDetails, invoiceSummary }, 
                             <div>Certified that the particulars given are true and correct</div>
                         </Row>
                         <Row className='stamp' >
-                         
                                 For Nayan Glass
-                         
                         </Row>
                     </Col>
                 </Row>

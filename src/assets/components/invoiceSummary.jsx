@@ -33,7 +33,7 @@ function InvoiceSummary({ setDiscount, invoiceSummary }) {
         </Row>
         <Row gutter={[8, 8]} style={{ fontWeight: 'bold' }}>
           <Col xs={16} style={{ textAlign: 'right' }}>Grand Total:</Col>
-          <Col xs={8} style={{ textAlign: 'center' }}>{Math.round(invoiceSummary?.totalWithGst)}</Col>
+          <Col xs={8} style={{ textAlign: 'center' }}>{Math.floor(invoiceSummary?.totalWithGst)}</Col>
         </Row>
       </Col>
     </Row>

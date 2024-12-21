@@ -108,7 +108,6 @@ const CustomerDetails = ({ customer, setCustomer, customerData, billingDetails, 
                         </Form.Item>
                     </Col>
                     <Col span={12}>
-
                         <Form.Item label="Vehicle Number">
                             <Input placeholder="Enter vehicle number" onChange={(e) => setBillingDetails(prevDetails => ({ ...prevDetails, vehicleNo: e.target.value }))} />
                         </Form.Item>
@@ -124,7 +123,6 @@ const CustomerDetails = ({ customer, setCustomer, customerData, billingDetails, 
                             />
                         </Form.Item>
                     </Col>
-
                     <Col span={12}>
                         <Form.Item label="State Code">
                             <InputNumber
@@ -138,9 +136,7 @@ const CustomerDetails = ({ customer, setCustomer, customerData, billingDetails, 
             </Col>
             <Col xs={{ span: 24, order: 0 }} sm={12} md={8} lg={{ span: 4, order: 3 }} className='textfield-col'>
                 <Row gutter={[8, 0]}>
-
                     <Col xs={12} lg={24}>
-
                         <Form.Item label="Invoice No.">
                             <InputNumber placeholder="Enter invoice number" onChange={(value) => {
                                 setBillingDetails(prevDetails => ({
@@ -156,11 +152,9 @@ const CustomerDetails = ({ customer, setCustomer, customerData, billingDetails, 
                         </Form.Item>
                     </Col>
                 </Row>
-
             </Col>
         </Row>
     )
 }
-
 
 export default CustomerDetails;

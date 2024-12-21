@@ -20,9 +20,9 @@
 }
 
 .ant-select-dropdown {
-  touch-action: pan-y; /* Enable vertical scrolling */
+  touch-action: pan-y; 
   overflow-y: auto !important;
-  max-height: 300px; /* Set a max height for the dropdown */
+  max-height: 300px;
 }
 
 .ant-input-number {
@@ -33,8 +33,6 @@
   padding: 5px !important;
   text-align: center !important;
 }
-
-
 
 .billing-data .ant-col {
   padding: 0 4px !important;
@@ -86,7 +84,6 @@
   }
 
   .print-content {
-    /* position: absolute; */
     display: flex ;
     align-items: center ;
     justify-content: center ;

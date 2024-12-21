@@ -12,69 +12,67 @@ function Login() {
     const navigate = useNavigate()
 
     const handleLogin = async () => {
-        setLoading(true); 
+        setLoading(true);
         try {
             const userCredential = await signInWithEmailAndPassword(auth, user.email, user.password);
             const token = await userCredential.user.getIdToken();
             document.cookie = `authToken=${token}; path=/; max-age=${86400}`
             setLoading(false)
-            navigate("/"); 
-            
+            navigate("/");
+
         } catch (error) {
             console.log(error, 'error')
             setAlert(true)
             setLoading(false)
-        } 
+        }
     }
 
     useEffect(() => {
-        setTimeout(() => { setAlert(false) }, 5000)
-    }, []);
+        setTimeout(() => { alert && setAlert(false) }, 5000)
+    }, [alert]);
 
     return (
         <>
-            {alert && (
-                <Alert
-                    description="Invalid credentials. Please retry!"
-                    type="error"
-                    showIcon
-                />
-            )}
-
             <div className="card-container">
-               
-                    <Card>
-                        <Form layout="vertical" onFinish={handleLogin}>
-                            <Form.Item label="Email">
-                                <Input
-                                    placeholder="Enter email"
-                                    type="email"
-                                    value={user?.email}
-                                    onChange={(e) => {
-                                        setUser(prevDetails => ({
-                                            ...prevDetails,
-                                            email: e.target.value,
-                                        }))
-                                    }} />
-                            </Form.Item>
-                            <Form.Item label="Password">
-                                <Input.Password
-                                    placeholder="Enter password"
-                                    value={user?.password}
-                                    onChange={(e) => {
-                                        setUser(prevDetails => ({
-                                            ...prevDetails,
-                                            password: e.target.value,
-                                        }))
-                                    }} />
-                            </Form.Item>
-                            {loading ? <Spin /> :
+                {alert && (
+                    <Alert
+                        description="Invalid credentials. Please retry!"
+                        type="error"
+                        showIcon
+                    />
+                )}
+                <Card>
+                    <Form layout="vertical" onFinish={handleLogin}>
+                        <Form.Item label="Email">
+                            <Input
+                                placeholder="Enter email"
+                                type="email"
+                                value={user?.email}
+                                onChange={(e) => {
+                                    setUser(prevDetails => ({
+                                        ...prevDetails,
+                                        email: e.target.value,
+                                    }))
+                                }} />
+                        </Form.Item>
+                        <Form.Item label="Password">
+                            <Input.Password
+                                placeholder="Enter password"
+                                value={user?.password}
+                                onChange={(e) => {
+                                    setUser(prevDetails => ({
+                                        ...prevDetails,
+                                        password: e.target.value,
+                                    }))
+                                }} />
+                        </Form.Item>
+                        {loading ? <Spin /> :
                             <Button htmlType="submit" type="primary" loading={loading}>
                                 Login
-                            </Button> }
-                        </Form>
-                    </Card>
-               
+                            </Button>}
+                    </Form>
+                </Card>
+
             </div>
         </>
     )

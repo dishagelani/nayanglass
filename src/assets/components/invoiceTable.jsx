@@ -142,7 +142,6 @@ const InvoiceTable = ({ details, updateDetail }) => {
                 />
               </div>
             </Col>
-
             <Col span={6}>
               <div>
                 {/* <span>Amount: </span> */}
