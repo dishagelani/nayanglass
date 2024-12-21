@@ -36,7 +36,7 @@ const InvoiceForm = () => {
     );
 
     const handlePrint = () => {
-        console.log(billingDetails, customer, invoiceDetails, invoiceSummary, discount);
+        console.log(billingDetails, "billing details");
         setIsPrinting(true);
 
         setTimeout(() => {
@@ -101,6 +101,7 @@ const InvoiceForm = () => {
                     customer={customer}
                     setCustomer={setCustomer}
                     customerData={customerData}
+                    billingDetails = {billingDetails}
                     setBillingDetails={setBillingDetails}
                 />
                 <InvoiceTable details={invoiceDetails} updateDetail={updateDetail} />

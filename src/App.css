@@ -3,19 +3,28 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  min-height: 100vh; /* Ensure full height is covered */
+  position: relative;
 }
 
 
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
   background-color: #ffffff
 }
+
+
+.scroll-lock {
+  overflow: hidden;
+  height: 100%;
+}
+
 
 @media only screen and (max-width: 767px) {
   body {
@@ -30,11 +39,5 @@ body {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
-  
-  #root {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-  }
+
 } 

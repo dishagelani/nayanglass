@@ -50,6 +50,7 @@ const PrintContent =  forwardRef(({ customer, invoiceDetails, invoiceSummary }, 
 
     return (
         <div className="print-section" ref={ref}>
+            <div className='inner-print-section'>
             <div className='page-header'>
                 <div className='first-row'>
                     <div>Tax invoice</div>
@@ -208,6 +209,7 @@ const PrintContent =  forwardRef(({ customer, invoiceDetails, invoiceSummary }, 
                     </Col>
                 </Row>
 
+            </div>
             </div>
         </div >
 
