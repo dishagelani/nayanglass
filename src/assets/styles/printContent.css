@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
 
-
 .print-section {
     height: max-content;
     width: auto;
@@ -38,8 +37,8 @@
     margin: 0;
 }
 
-.subtitleRow {
-    font-family: "Quintessential", serif;
+.subtitle-row {
+    font-family: "Quintessential", serif 
 }
 
 .customer-details .title-row {
@@ -194,7 +193,6 @@
         border: none !important;
     }
 }
-
 
 @media print {
     .customer-details .title-row {

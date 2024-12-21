@@ -58,7 +58,7 @@ const PrintContent =  forwardRef(({ customer, invoiceDetails, invoiceSummary }, 
                 </div>
                 <div className='title-row'>
                     <h1>Nayan Glass</h1>
-                    <div className='subtitle-row'>All Type Of Glass</div>
+                    <div className='subtitle-row' >All Type Of Glass</div>
                 </div>
                 <div>37, Udhyog Nagar, Navagam, Kamrej</div>
                 <div>Mo. : 9825918737</div>
